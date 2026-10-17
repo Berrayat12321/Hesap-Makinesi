@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-
+#include <clocale>
 using namespace std;
 int main()
 {
@@ -11,14 +11,14 @@ int main()
 
 	string input;
 
-	cout << "1.İşlem : Toplama İşlemi" << endl;
-	cout << "2.İşlem : Çıkarma İşlemi" << endl;
-	cout << "3.İşlem : Çarpma İşlemi" << endl;
-	cout << "4.İşlem : Bölme İşlemi" << endl;
+	cout << "Operation 1: Addition (+)" << endl;
+	cout << "Operation 2: Subtraction (-)" << endl;
+	cout << "Operation 3: Collision (x)" << endl;
+	cout << "Operation 4: Division (/)" << endl;
 
 
 
-	cout << "Hangi İşlemi Yapmak İstiyorsunuz ?" << endl;
+	cout << "Which action would you like to perform?" << endl;
 
 	cin >> işlem;
 
@@ -28,7 +28,7 @@ int main()
 		cout << "b:";
 		cin >> b;
 
-		cout << "Sonuç:" << a + b << endl;
+		cout << "Result:" << a + b << endl;
 	}
 
 	else if (işlem == "2") {
@@ -37,7 +37,7 @@ int main()
 		cout << "b:";
 		cin >> b;
 
-		cout << "Sonuç:" << a - b << endl;
+		cout << "Result:" << a - b << endl;
 	}
 
 	else if (işlem == "3") {
@@ -46,7 +46,7 @@ int main()
 		cout << "b:";
 		cin >> b;
 
-		cout << "Sonuç:" << a * b << endl;
+		cout << "Result:" << a * b << endl;
 	}
 
 	else if (işlem == "4") {
@@ -55,10 +55,10 @@ int main()
 		cout << "b:";
 		cin >> b;
 
-		cout << "Sonuç:" << (float)a / b << endl;
+		cout << "Result:" << (float)a / b << endl;
 	}
 	else {
-		cout << "Geçersiz İşlem" << endl;
+		cout << "İnvalid Action" << endl;
 	}
 
 
